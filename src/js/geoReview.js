@@ -5,13 +5,12 @@ import InteractiveMap from './intetactiveMap';
 //  создание объекта класса InteractiveMap;
 //  создание функции обработки клика по карте onClick;
 //  инициализация карты => вызов функции onInit.
-export default сlass GeoReview {
+export default class GeoReview {
   constructor() {
     this.formTemplate = document.querySelector('#addFormTemplate').innerHTML;
     this.map = new InteractiveMap('map', this.onClick.bind(this));
     this.map.init().then(this.onInit.bind(this));
   }
-
   //
   //  запрос у сервере коррдинаты всех отзывов;
   //  для каждого координата создаются плеймарки
