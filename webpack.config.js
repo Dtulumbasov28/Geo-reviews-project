@@ -12,15 +12,11 @@ rules.push({
 
 module.exports = {
     entry: {
-        index: './src/index.js'
+        index: '/src/js/server/index.js'
     },
     output: {
         filename: '[name].[hash].js',
         path: path.resolve('dist')
-    },
-    devServer: {
-        index: 'index.html',
-        overlay: true
     },
     devtool: 'source-map',
     module: {
